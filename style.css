@@ -11,6 +11,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  overflow-y: hidden;
 }
 /* body {
     overflow-x: hidden;
@@ -22,7 +23,7 @@ body {
 }
 
 #navbar {
-  display: none;
+  /* display: none; */
   height: 12vh;
   width: 100%;
   background-color: rgb(237, 230, 230);
@@ -81,21 +82,24 @@ body {
   object-fit: cover;
 }
 #backside-circle {
-  height: 18vw;
-  width: 18vw;
+  height: 18.2vw;
+  width: 18.2vw;
+  border: 1px solid black;
+
   border-radius: 50%;
-  background-color: #f3f3f3e3;
+  background-color: #ffffff;
   position: absolute;
-  top: 50%;
-  left: 48%;
+  top: 34.1%;
+  left: 39%;
   transform: translate(-50%, -50%);
-  scale: 1;
+  scale: 0;
   /* display: none; */
 }
 
 #circle {
-  height: 13.5vw;
-  width: 13.9vw;
+  height: 13.7vw;
+  border: 1px solid black;
+  width: 13.7vw;
   border-radius: 50%;
   background-color: #ffffff;
   display: flex;
@@ -104,10 +108,10 @@ body {
   position: relative;
   margin: auto;
   margin-top: 2.5vw;
-  scale: 1;
+  scale: 0;
   position: absolute;
-  top: 28%;
-  left: 41.4%;
+  top: 33.7%;
+  left: 41.3%;
   /* display: none; */
 }
 /* .letter {
@@ -119,7 +123,7 @@ body {
 .letter {
   position: absolute;
   font-size: 2vw;
-  /* opacity: 1; */
+  opacity: 1;
   color: black;
   margin-top: -4vw;
   padding-left: 3vw;
@@ -127,32 +131,47 @@ body {
 }
 
 #letterH {
-  font-size: 7vw;
+  font-size: 8vw;
   top: 52%;
+  font-weight: bold;
+
+  /* display: none; */
   left: 43%;
 }
 
 #letterA {
-  font-size: 3vw;
-  top: 52%;
-  left: 43%;
+  font-size: 3.5vw;
+  top: 56%;
+  left: 46%;
+  font-weight: bold;
+
   /* display: none; */
 }
 
 #letterP {
-  top: 52%;
-  left: 43%;
+  top: 57%;
+  left: 42%;
   /* display: none; */
+  font-weight: bold;
 
-  font-size: 3vw;
+  font-size: 2.5vw;
 }
 
 #letterI {
-  top: 52%;
+  top: 56%;
   left: 43%;
   /* display: none; */
+  font-weight: bold;
+  font-size: 3.5vw;
+}
 
-  font-size: 3vw;
+#letteri {
+  top: 56%;
+  left: 44%;
+  /* display: none; */
+  font-weight: bold;
+
+  font-size: 3.5vw;
 }
 
 #all-svg svg {
@@ -193,6 +212,52 @@ body {
   left: 45%;
   /* display: none; */
 }
+
+.svg-span1 {
+  position: absolute;
+  top: 50%;
+  font-size: 4vw;
+  left: 45%;
+  opacity: 1;
+  scale: 0;
+}
+.svg-span2 {
+  position: absolute;
+  top: 50%;
+  font-size: 4vw;
+  left: 45%;
+  opacity: 1;
+  scale: 0;
+  /* display: none; */
+}
+.svg-span3 {
+  position: absolute;
+  font-size: 4vw;
+  top: 50%;
+  left: 45%;
+  opacity: 1;
+  scale: 0;
+  /* display: none; */
+}
+.svg-span4 {
+  position: absolute;
+  font-size: 4vw;
+  top: 50%;
+  left: 45%;
+  opacity: 1;
+  scale: 0;
+  /* display: none; */
+}
+.svg-span5 {
+  position: absolute;
+  font-size: 4vw;
+  top: 50%;
+  left: 45%;
+  opacity: 1;
+  scale: 0;
+  /* display: none; */
+}
+
 .circle-text {
   display: inline-block;
   margin: 0 auto;
@@ -202,5 +267,34 @@ body {
   /* margin-right: -2vw; */
   height: 230px;
   margin-left: -2vw;
-  opacity: 1;
+}
+
+.text1 {
+  opacity: 0;
+  scale: 0;
+  /* display: none; */
+}
+
+.text2 {
+  background-color: red;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+}
+.words {
+  position: absolute;
+  font-size: 3vw;
+  top: 53%;
+  left: 32%;
+  font-weight: bold;
+  opacity: 0;
+  scale: 0;
+}
+.words span {
+  color: black;
+}
+.main-text {
+  transform: translate(3px, 3px);
+  /* display: none; */
+  font-weight: bold;
 }
